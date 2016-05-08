@@ -4,8 +4,19 @@
         <title>birthdayGift</title>
         <meta charset="utf-8"> 
         <link rel="stylesheet" href="style.css">
-    </head>
-
+	<script>
+	window.addEventListener("load",function(){
+	let a = document.createElement("div");
+	let canvas = document.getElementsByClassName("sketch")[0];
+	a.style.height = 200 + "px";
+	a.style.visibility ="hidden";
+	a.style.top = "0";
+	document.body.appendChild(a);
+	document.getElementsByClassName("ending")[0].style.top = canvas.height - 200 + "px";
+	});
+	</script>    
+</head>
+	
 <!-- BODY STARTS HERE  -->
 <!-- YELLOW MINION GOES HERE ;)-->
     <body class = "tt">
@@ -121,7 +132,7 @@
 
 
         var MAX_PARTICLES = 280;
-        var COLOURS = [ '#69D2E7', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900', '#FF4E50', '#F9D423' ];
+        var COLOURS = [ '#69D2E7', '#48b0aa', '#a29aca', '#F38630', '#FA6900', '#ba89a2', '#F9D423' ];
 
         var particles = [];
         var pool = [];
@@ -200,7 +211,6 @@
         };
     document.getElementById("dots").style.zIndex = "6";  
     </script>
-    
     </body>
 
     <div class="ending">
@@ -208,7 +218,4 @@
         <p>这个我花了半小时各种乱七八糟组装出来的网页，代表了本系最低的网页制造水平的成果。。。希望你还喜欢啦~~~</p>
     </div>
     
-
-
-
 </html>
