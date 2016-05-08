@@ -4,17 +4,18 @@ body{
 	margin: 0;
 	padding:0;
 	background: #dfb0b2;
+	z-index: -1;
 }
 
 
 .wrapper{
 	width: 240px;
 	margin:100px auto;
-	z-index: -1;/*new*/
+	z-index: -2;/*new*/
 }
 .litteH{
 	position: relative;
-	z-index: -1; /*new*/
+	z-index: -2; /*new*/
 }
 .bodyH{
 	position: absolute;
@@ -24,7 +25,7 @@ body{
 	border-radius: 115px;
 	background: rgb(249,217,70);
 	overflow: hidden;
-	z-index: 2;
+	z-index: 1;
 }
 .bodyH .condoleBelt{
 	position: absolute;
@@ -45,6 +46,14 @@ body{
 	top:-88px;
 	left:165px;
 	-webkit-transform:rotate(-45deg);
+}
+.sketch
+{
+	height:100%;
+	top:0;
+	left:0;
+	width:100%;
+	position:fixed;
 }
 .bodyH .condoleBelt .left:after,
 .bodyH .condoleBelt .right:after{
@@ -417,7 +426,7 @@ body{
 	font-size: 50px;
 	font-style: oblique;
 	color: black;
-	z-index: -3;
+	z-index:1;
 }
 
 
@@ -425,7 +434,9 @@ body{
 	margin-left: 100px;
 	font-size: 18px;
 	color: black;	
-	z-index: -1;
+	z-index: 2;
+	display:block;
+	position:absolute;
 }
 
 .tt{
