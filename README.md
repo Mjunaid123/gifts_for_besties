@@ -2,10 +2,7 @@
 
 ## TODO by Zoe
 
-..*1) the z-index issue
-..*2) change bgd-color
-..*3) change auto-play
-..*4) change ratio
+..*1) the autoplay button cannot be triggered =.=
 
 ## upcoming for Ly.W
 

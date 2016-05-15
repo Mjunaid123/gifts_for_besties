@@ -132,7 +132,7 @@
 
 
         var MAX_PARTICLES = 280;
-        var COLOURS = [ '#69D2E7', '#48b0aa', '#a29aca', '#F38630', '#FA6900', '#ba89a2', '#F9D423' ];
+        var COLOURS = [ '#69D2E7', '#8ef6d0', '#d08ef6', '#f6d08e', '#b4f68e', '#ba89a2','8eb4f6' ];
 
         var particles = [];
         var pool = [];
@@ -209,6 +209,7 @@
 
             }
         };
+    window.onmousemove = function(e){demo.spawn(e.clientX,e.clientY)};
     document.getElementById("dots").style.zIndex = "6";  
     </script>
     </body>
@@ -219,3 +220,4 @@
     </div>
     
 </html>
+
