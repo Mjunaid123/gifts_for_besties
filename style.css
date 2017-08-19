@@ -7,6 +7,18 @@ body{
 	z-index: -1;
 }
 
+/* clear fix */
+/*
+https://css-tricks.com/snippets/css/clear-fix
+*/
+.container:after{
+	visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
 
 .wrapper{
 	width: 240px;
@@ -434,9 +446,10 @@ body{
 }
 
 .ending{
+	margin-top: 50px;
 	margin-left: 100px;
 	font-size: 18px;
-	color: black;	
+	color: black;
 	z-index: 2;
 	display:block;
 	position:absolute;
@@ -482,5 +495,3 @@ body{
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
-
